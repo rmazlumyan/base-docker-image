@@ -13,7 +13,7 @@ RUN ln -s $JAVA_HOME/bin/* /usr/local/bin/
 # Install Tomcat 8
 #
 
-RUN cd /opt &&  curl -fSL 'https://www.apache.org/dist/tomcat/tomcat-8/v8.0.26/bin/apache-tomcat-8.0.26.tar.gz' | tar -xz
+RUN cd /opt &&  curl -fSL 'https://www.apache.org/dist/tomcat/tomcat-8/v8.0.30/bin/apache-tomcat-8.0.30.tar.gz' | tar -xz
 
 ENV CATALINA_HOME /usr/local/tomcat
 RUN mkdir -p "$CATALINA_HOME"
